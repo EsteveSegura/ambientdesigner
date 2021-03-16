@@ -10,7 +10,7 @@ class Sound {
     }
 
     get id() {
-        return this.id
+        return this._id
     }
 
     set id(id) {
@@ -18,11 +18,11 @@ class Sound {
             throw new Error("Sound id already exists")
         }
 
-        this.id = id
+        this._id = id
     }
 
     get name() {
-        return this.name
+        return this._name
     }
 
     set name(name) {
@@ -30,11 +30,11 @@ class Sound {
             throw new Error("Sound name already exists")
         }
 
-        this.name = name
+        this._name = name
     }
 
     get path() {
-        return this.path
+        return this._path
     }
 
     set path(path) {
@@ -42,11 +42,11 @@ class Sound {
             throw new Error("Sound path already exists")
         }
 
-        this.path = path
+        this._path = path
     }
 
     get soundLength() {
-        return this.soundLength
+        return this._soundLength
     }
 
     set soundLength(soundLength) {
@@ -54,11 +54,11 @@ class Sound {
             throw new Error("Sound soundLength already exists")
         }
 
-        this.soundLength = soundLength
+        this._soundLength = soundLength
     }
 
     get configuration() {
-        return this.configuration
+        return this._configuration
     }
 
     set configuration(configuration) {
@@ -66,11 +66,11 @@ class Sound {
             throw new Error("Sound configuration already exists")
         }
 
-        this.configuration = configuration
+        this._configuration = configuration
     }
 
     get createdAt() {
-        return this.createdAt
+        return this._createdAt
     }
 
     set createdAt(createdAt) {
@@ -78,11 +78,11 @@ class Sound {
             throw new Error("Sound createdAt already exists")
         }
 
-        this.createdAt = createdAt
+        this._createdAt = createdAt
     }
 
     get updatedAt() {
-        return this.updatedAt
+        return this._updatedAt
     }
 
     set updatedAt(updatedAt) {
@@ -90,7 +90,7 @@ class Sound {
             throw new Error("Sound updatedAt already exists")
         }
 
-        this.updatedAt = updatedAt
+        this._updatedAt = updatedAt
     }
 }
 
