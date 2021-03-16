@@ -1,18 +1,38 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <SoundCard 
+      v-for="sound in allSounds"
+      :key="sound._id"
+      :name="sound._name"
+      :configuration="sound._configuration"
+      :path="sound._path"
+    />
+    <h1>AllSounds</h1>
+    {{ allSounds }}
+    <h1>allCollections</h1>
+    {{ allCollections }}
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import SoundCard from '@/components/SoundCard.vue'
+import {mapActions, mapGetters} from 'vuex'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    SoundCard
+  },
+  computed:{
+    ...mapGetters(["allSounds","allCollections"])
+  },
+  methods: {
+    ...mapActions(["getSounds","getCollections"])
+  },
+  created(){
+    this.getSounds()
+    this.getCollections()
   }
 }
 </script>
