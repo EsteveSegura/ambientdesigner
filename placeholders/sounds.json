@@ -1,0 +1,31 @@
+{
+  "sounds": [
+    {
+      "id": "1",
+      "name": "rain",
+      "path": "sound/rain.ogg",
+      "soundLength": 1000,
+      "configuration": [],
+      "createdAt": "x",
+      "updatedAt": "x"
+    },
+    {
+      "id": "2",
+      "name": "thunder",
+      "path": "sound/thunder.ogg",
+      "soundLength": 1000,
+      "configuration": [],
+      "createdAt": "x",
+      "updatedAt": "x"
+    },
+    {
+      "id": "3",
+      "name": "wind",
+      "path": "sound/wind.ogg",
+      "soundLength": 1000,
+      "configuration": [],
+      "createdAt": "x",
+      "updatedAt": "x"
+    }
+  ]
+}

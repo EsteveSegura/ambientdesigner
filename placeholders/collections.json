@@ -1,0 +1,16 @@
+{
+  "id": "1",
+  "listSounds": [
+    {
+      "id": "3",
+      "name": "wind",
+      "path": "sound/wind.ogg",
+      "soundLength": 1000,
+      "configuration": [],
+      "createdAt": "x",
+      "updatedAt": "x"
+    }
+  ],
+  "createdAt": "x",
+  "updatedAt": "x"
+}
